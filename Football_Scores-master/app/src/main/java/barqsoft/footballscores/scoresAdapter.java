@@ -59,6 +59,19 @@ public class scoresAdapter extends CursorAdapter
         ));
         //Log.v(FetchScoreTask.LOG_TAG,mHolder.home_name.getText() + " Vs. " + mHolder.away_name.getText() +" id " + String.valueOf(mHolder.match_id));
         //Log.v(FetchScoreTask.LOG_TAG,String.valueOf(detail_match_id));
+
+
+        mHolder.home_crest.setContentDescription(context.getString(R.string.a11y_home_crest, mHolder.home_name.getText()));
+        mHolder.away_crest.setContentDescription(context.getString(R.string.a11y_away_crest, mHolder.away_name.getText()));
+
+//      set content description of text to name of club
+        mHolder.home_name.setContentDescription(context.getString(R.string.a11y_home_name, mHolder.home_name.getText()));
+        mHolder.away_name.setContentDescription(context.getString(R.string.a11y_away_name, mHolder.away_name.getText()));
+
+        mHolder.date.setContentDescription(context.getString(R.string.a11y_match_date, mHolder.date.getText()));
+        mHolder.score.setContentDescription(context.getString(R.string.a11y_match_score, mHolder.score.getText()));
+
+
         LayoutInflater vi = (LayoutInflater) context.getApplicationContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View v = vi.inflate(R.layout.detail_fragment, null);
@@ -75,6 +88,11 @@ public class scoresAdapter extends CursorAdapter
             TextView league = (TextView) v.findViewById(R.id.league_textview);
             league.setText(Utilies.getLeague(cursor.getInt(COL_LEAGUE)));
             Button share_button = (Button) v.findViewById(R.id.share_button);
+
+            match_day.setContentDescription(context.getString(R.string.a11y_match_day, match_day.getText()));
+            league.setContentDescription(context.getString(R.string.a11y_league_name, league.getText()));
+            share_button.setContentDescription(context.getString(R.string.a11y_share_button));
+
             share_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v)
