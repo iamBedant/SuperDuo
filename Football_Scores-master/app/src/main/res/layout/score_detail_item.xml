@@ -6,7 +6,7 @@
     android:baselineAligned="false">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="@dimen/padding_zero"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical">
@@ -33,7 +33,7 @@
 
     <!-- Start: Result -->
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="@dimen/padding_zero"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical">
@@ -42,7 +42,7 @@
         <TextView
             android:id="@+id/score_textview"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/padding_zero"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
@@ -53,7 +53,7 @@
         <TextView
             android:id="@+id/date_textview"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/padding_zero"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
@@ -66,7 +66,7 @@
 
     <!-- Start: Away Team Details-->
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="@dimen/padding_zero"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical">

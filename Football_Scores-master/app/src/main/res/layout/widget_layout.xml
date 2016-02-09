@@ -15,25 +15,28 @@
             android:layout_height="wrap_content"
             android:background="#aaDEDFDE"
             android:orientation="horizontal"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" >
+            android:paddingLeft="@dimen/paddin_small"
+            android:paddingStart="@dimen/paddin_small"
+            android:paddingEnd="@dimen/paddin_small"
+            android:paddingRight="@dimen/paddin_small" >
 
             <ImageView
                 android:id="@+id/widgetImgLauncher"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="@dimen/padding_xlarge"
+                android:layout_height="@dimen/padding_xlarge"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/ic_launcher" />
 
             <LinearLayout
                 android:id="@+id/widgetTopBar"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/widget_margin"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:paddingBottom="4dp"
-                android:paddingLeft="8dp"
-                android:paddingTop="4dp" >
+                android:paddingBottom="@dimen/paddin_small"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingStart="@dimen/padding_medium"
+                android:paddingTop="@dimen/paddin_small" >
 
                 <TextView
                     android:layout_width="match_parent"
@@ -55,7 +58,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/padding_xs"
             android:background="#aaa" />
 
         <ListView

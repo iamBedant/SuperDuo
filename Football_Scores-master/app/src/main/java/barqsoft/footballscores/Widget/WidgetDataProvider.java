@@ -19,6 +19,7 @@ import barqsoft.footballscores.DatabaseContract;
 import barqsoft.footballscores.R;
 import barqsoft.footballscores.Utils.Utils;
 import barqsoft.footballscores.Utils.WidgetUtils;
+import barqsoft.footballscores.service.myFetchService;
 
 /**
  * Created by bebi2 on 2/1/2016.

@@ -7,7 +7,7 @@
 
 
     <include layout="@layout/score_detail_item"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/padding_zero"
         android:layout_height="match_parent"
         android:layout_weight="1"/>
 
