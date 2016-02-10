@@ -53,4 +53,16 @@
     <string name="a11y_match_date">Match date: <xliff:g id="match_date">%1$s</xliff:g></string>
     <string name="a11y_match_score">Match score: Home-Away <xliff:g id="home_name">%1$s</xliff:g></string>
     <string name="base_url" translatable="false">http://api.football-data.org/alpha/fixtures</string>
+    <string name="series_a">Seria A</string>
+    <string name="premier">Premier League</string>
+    <string name="uefa">UEFA Champions League</string>
+    <string name="division">Primera Division</string>
+    <string name="bundesliga_">Bundesliga</string>
+    <string name="unknown_language">Not known League Please report</string>
+    <string name="group_stage">Group Stages, Matchday : 6</string>
+    <string name="first_knock_out">First Knockout round</string>
+    <string name="quarter_final_">QuarterFinal</string>
+    <string name="semi_final_">SemiFinal</string>
+    <string name="finale">Final</string>
+    <string name="matche_day">"Matchday : "</string>
 </resources>

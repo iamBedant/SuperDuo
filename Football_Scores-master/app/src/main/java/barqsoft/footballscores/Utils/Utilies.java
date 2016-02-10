@@ -18,46 +18,46 @@ public class Utilies
     public static final int CHAMPIONS_LEAGUE = 362;
     public static final int PRIMERA_DIVISION = 358;
     public static final int BUNDESLIGA = 351;
-    public static String getLeague(int league_num)
+    public static String getLeague(int league_num, Context mContext)
     {
         switch (league_num)
         {
-            case SERIE_A : return "Seria A";
-            case PREMIER_LEGAUE : return "Premier League";
-            case CHAMPIONS_LEAGUE : return "UEFA Champions League";
-            case PRIMERA_DIVISION : return "Primera Division";
-            case BUNDESLIGA : return "Bundesliga";
-            default: return "Not known League Please report";
+            case SERIE_A : return mContext.getString(R.string.series_a);
+            case PREMIER_LEGAUE : return mContext.getString(R.string.premier);
+            case CHAMPIONS_LEAGUE : return mContext.getString(R.string.uefa);
+            case PRIMERA_DIVISION : return mContext.getString(R.string.division);
+            case BUNDESLIGA : return mContext.getString(R.string.bundesliga_);
+            default: return mContext.getString(R.string.unknown_language);
         }
     }
-    public static String getMatchDay(int match_day,int league_num)
+    public static String getMatchDay(int match_day,int league_num,Context mContext)
     {
         if(league_num == CHAMPIONS_LEAGUE)
         {
             if (match_day <= 6)
             {
-                return "Group Stages, Matchday : 6";
+                return mContext.getString(R.string.group_stage);
             }
             else if(match_day == 7 || match_day == 8)
             {
-                return "First Knockout round";
+                return mContext.getString(R.string.first_knock_out);
             }
             else if(match_day == 9 || match_day == 10)
             {
-                return "QuarterFinal";
+                return mContext.getString(R.string.quarter_final_);
             }
             else if(match_day == 11 || match_day == 12)
             {
-                return "SemiFinal";
+                return mContext.getString(R.string.semi_final_);
             }
             else
             {
-                return "Final";
+                return mContext.getString(R.string.finale);
             }
         }
         else
         {
-            return "Matchday : " + String.valueOf(match_day);
+            return mContext.getString(R.string.matche_day) + String.valueOf(match_day);
         }
     }
 
@@ -73,7 +73,7 @@ public class Utilies
         }
     }
 
-    public static int getTeamCrestByTeamName (String teamname)
+    public static int getTeamCrestByTeamName (String teamname, Context mContext)
     {
         if (teamname==null){return R.drawable.no_icon;}
         switch (teamname)
